@@ -55,7 +55,9 @@
       },
       "scripts": {
            "dev": "vite",
-            "build": "npx vite build",
+            "dev:full": "concurrently \"npm run server\" \"npm run dev\"",
+            "build": "vite build",
+            "lint": "eslint .",
             "preview": "vite preview"
       }
 }
