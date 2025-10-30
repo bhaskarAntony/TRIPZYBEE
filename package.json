@@ -53,11 +53,8 @@
             "@vitejs/plugin-react-swc": "^3.10.2",
             "vite": "^6.3.5"
       },
-      "scripts": {
-           "dev": "vite",
-            "dev:full": "concurrently \"npm run server\" \"npm run dev\"",
-            "build": "vite build",
-            "lint": "eslint .",
-            "preview": "vite preview"
-      }
+    "scripts": {
+    "build": "vite build",
+    "vercel-build": "npm ci && npm run build"
+  }
 }
